@@ -11,7 +11,6 @@ am5.ready(function () {
         am5themes_Animated.new(root)
     ]);
 
-
     // Create chart
     // https://www.amcharts.com/docs/v5/charts/xy-chart/
     var chart = root.container.children.push(am5xy.XYChart.new(root, {
@@ -32,22 +31,18 @@ am5.ready(function () {
             fillField: "color",
             strokeField: "color",
 
-           /*  centerY: am5.p50,
+        /*  centerY: am5.p50,
             marginLeft: 20,
             x: 500,
             y:100,
             layout: root.horizontalLayout,
             clickTarget: "none" */
 
-
-
             /* centerX: am5.p60, */
             /* x: am5.p0,
             y: am5.p100,
             layout: root.horizontalLayout, */
             /* clickTarget: "none" */
-
-
 
             /* centerX: am5.percent(50),
             x: am5.percent(40),
@@ -250,11 +245,12 @@ am5.ready(function () {
 
     // Add cursor
     // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
-    var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+    
+   var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
         xAxis: xAxis,
-        yAxis: yAxis
-    }));
+        yAxis: yAxis})); 
 
+ 
 
     // Make stuff animate on load
     // https://www.amcharts.com/docs/v5/concepts/animations/
